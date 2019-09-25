@@ -19,7 +19,7 @@ Pasos para descargar e iniciar el proyecto.
 
 7. Ejecutar el comando 'grunt css' para compilar los estilos.
 
-8. Ejecutar el comando 'grunt js' para compilar los scripts JS. Si ve un mensaje de alerta en este paso, ignórelo.
+8. Ejecutar el comando 'grunt js' para compilar los scripts JS. Si ve un mensaje de alerta en este paso, ignórelo (uglify se está quejando del JS moderno, pero compila).
 
 9. Si cuenta con un servidor virtual, ejecute el proyecto usando el de su preferencia, de lo contrario, lance el archivo index.html en su navegador.
 
