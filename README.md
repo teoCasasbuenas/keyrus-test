@@ -1,6 +1,8 @@
 # keyrus-test
 Archivos para la prueba de FrontEnd Developer en Keyrus
 
+Antes de iniciar, verifique que tiene git-cli instalado en su equipo. Si no cuenta con una instalación de git, siga los pasos en  https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
 Pasos para descargar e iniciar el proyecto.
 
 1. Clonar el repositorio usando el comando 'git clone https://github.com/teoCasasbuenas/keyrus-test.git'
