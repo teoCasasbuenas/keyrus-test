@@ -21,7 +21,7 @@ Pasos para descargar e iniciar el proyecto.
 
 8. Ejecutar el comando 'grunt js' para compilar los scripts JS. Si ve un mensaje de alerta en este paso, ignórelo (uglify se está quejando del JS moderno, pero compila).
 
-9. Si cuenta con un servidor virtual, ejecute el proyecto usando el de su preferencia, de lo contrario, lance el archivo index.html en su navegador.
+9. Si cuenta con un servidor virtual, ejecute el proyecto usando el de su preferencia, de lo contrario, lance el archivo index.html en su navegador. La mayoría de los IDE's modernos cuentan con un servidor virtual, también se puede ejecutar el proyecto desde allí.
 
 10. En la página de inicio use las siguientes credenciales para verificar el correcto funcionamiento:
    
