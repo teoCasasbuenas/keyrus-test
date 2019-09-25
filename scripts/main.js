@@ -40,24 +40,25 @@ const validateForm = (form) => {
   if (isValidMail && isValidPassword) {
     checkUser(form.mail.val(), form.pass.val());
   } else {
-    $('body').append(buildMessage(isValidMail, isValidPassword));
-    setTimeout(() => {
-      $('.alert').fadeOut('slow', () => {
-        $('.alert').alert('close');
-      })
-    }, 4000);
+    buildMessage(isValidMail, isValidPassword);
+
   }
 
 }
 
-const buildMessage = (validEmail, validPass) => {
-  const messageText = !validEmail || !validPass ? 'Digite seu email o senha' : 'Você foi logado com succeso',
+const buildMessage = (validEmail, validPass, message = '', messageTime = 4000) => {
+  const messageText = message.length > 0 ? message : !validEmail || !validPass ? 'Digite seu email o senha' : 'Você foi logado com succeso',
     messageIcon = !validEmail || !validPass ? 'fa fa-close' : 'fa fa-check',
     messageClass = !validEmail || !validPass ? 'alert-danger' : 'alert-success';
 
-  return `<div class="alert ${messageClass}" role="alert" data-dissmiss="alert">
+  $('body').append(`<div class="alert ${messageClass}" role="alert" data-dissmiss="alert">
             <i class="fa ${messageIcon}"></i> ${messageText}
-          </div>`;
+          </div>`);
+  setTimeout(() => {
+    $('.alert').fadeOut('slow', () => {
+      $('.alert').alert('close');
+    })
+  }, messageTime);
 };
 
 const validateEmail = mailField => {
@@ -81,17 +82,14 @@ const validatePassword = passField => {
 const checkUser = (mail, pass) => {
   const users = JSON.parse(sessionStorage.getItem('users')),
     user = users.find(user => {
-      console.log(user);
       return user.user === mail && user.password === pass
     });
-  console.log(user, mail, pass);
   if (user) {
-    $('body').append(buildMessage(true, true));
+    buildMessage(true, true, '', 2000);
     setTimeout(() => {
-      $('.alert').fadeOut('slow', () => {
-        $('.alert').alert('close');
-      });
       window.location = '/keyrus-test/welcome.html'
-    }, 4000);
+    }, 2000);
+  } else {
+    buildMessage(false, false, 'Nome de usuário ou senha inválidos, verifique e tente novamente', 4000);
   }
 }
