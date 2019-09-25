@@ -18,6 +18,7 @@ Pasos para descargar e iniciar el proyecto.
 7. Si cuenta con un servidor virtual, ejecute el proyecto usando el de su preferencia, de lo contrario, lance el archivo index.html en su navegador.
 
 8. En la página de inicio use las siguientes credenciales para verificar el correcto funcionamiento:
+   
    user: mateo@mateo.com
    pass: pass123
 
