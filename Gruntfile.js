@@ -41,7 +41,7 @@ module.exports = function (grunt) {
                 }
             },
             concat: {
-                files: ['scripts/hello.js','scripts/main.js'],
+                files: ['scripts/main.js'],
                 tasks: ['concat']
             },
             uglify: {
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
     // Default task
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('css', ['sass', 'cssmin']);
-    grunt.registerTask('js', ['coffee', 'concat', 'uglify']);
+    grunt.registerTask('js', ['concat', 'uglify']);
 
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-uglify');
