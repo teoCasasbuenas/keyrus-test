@@ -7,15 +7,18 @@ Pasos para descargar e iniciar el proyecto.
 
 2. Verificar que se tiene descargado Node y NPM usando los comando 'node -v' y 'npm -v', si no los tiene segiuir los pasos https://nodejs.org/es/download/ para la instalación.
 
-3. Ejecutar el comando 'npm i'
+3. Entre en la carpeta generada usando el comando 'cd keyrus-test'.
 
-4. Ejecutar el comando 'grunt css' para compilar los estilos.
+4. Ejecutar el comando 'npm i'.
 
-5. Ejecutar el comando 'grunt js' para compilar los scripts JS.
+5. Ejecutar el comando 'grunt css' para compilar los estilos.
 
-6. Si cuenta con un servidor virtual, ejecute el proyecto usando el de su preferencia, de lo contrario, lance el archivo index.html en su navegador.
+6. Ejecutar el comando 'grunt js' para compilar los scripts JS.
 
-7. En la página de inicio use las siguientes credenciales para verificar el correcto funcionamiento:
+7. Si cuenta con un servidor virtual, ejecute el proyecto usando el de su preferencia, de lo contrario, lance el archivo index.html en su navegador.
+
+8. En la página de inicio use las siguientes credenciales para verificar el correcto funcionamiento:
    user: mateo@mateo.com
    pass: pass123
 
+¡Gracias!
