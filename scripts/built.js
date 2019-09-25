@@ -87,7 +87,7 @@ const checkUser = (mail, pass) => {
   if (user) {
     buildMessage(true, true, '', 2000);
     setTimeout(() => {
-      window.location = '/keyrus-test/welcome.html'
+      window.location = 'welcome.html'
     }, 2000);
   } else {
     buildMessage(false, false, 'Nome de usuário ou senha inválidos, verifique e tente novamente', 4000);
