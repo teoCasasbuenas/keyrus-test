@@ -20,6 +20,7 @@ Pasos para descargar e iniciar el proyecto.
 8. En la página de inicio use las siguientes credenciales para verificar el correcto funcionamiento:
    
    user: mateo@mateo.com
+   
    pass: pass123
 
 ¡Gracias!
