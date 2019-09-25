@@ -18,6 +18,7 @@ npm-debug.log
 yarn-error.log
 *.map
 *.css
+package-lock.json
 
 # System Files
 .DS_Store
